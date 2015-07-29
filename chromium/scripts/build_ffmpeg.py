@@ -332,8 +332,8 @@ def main(argv):
         # --optflags doesn't append multiple entries, so set all at once.
         '--optflags="-O2"',
 
-        '--enable-decoder=theora,vp8',
-        '--enable-parser=vp3,vp8',
+        '--enable-decoder=theora,vp8,vp9',
+        '--enable-parser=vp3,vp8,vp9',
     ])
 
   if target_os in ('linux', 'linux-noasm', 'android'):
