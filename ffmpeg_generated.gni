@@ -147,6 +147,12 @@ if ((is_linux) || (is_mac) || (is_win)) {
     "libavcodec/vp8.c",
     "libavcodec/vp8_parser.c",
     "libavcodec/vp8dsp.c",
+    "libavcodec/vp9.c",
+    "libavcodec/vp9_parser.c",
+    "libavcodec/vp9dsp.c",
+    "libavcodec/vp9dsp_10bpp.c",
+    "libavcodec/vp9dsp_12bpp.c",
+    "libavcodec/vp9dsp_8bpp.c",
   ]
 }
 
@@ -271,6 +277,7 @@ if ((is_linux && current_cpu == "x64") || (is_linux && current_cpu == "x86") || 
     "libavcodec/x86/hpeldsp_init.c",
     "libavcodec/x86/vp3dsp_init.c",
     "libavcodec/x86/vp8dsp_init.c",
+    "libavcodec/x86/vp9dsp_init.c",
     "libavutil/x86/autorename_libavutil_x86_cpu.c",
     "libavutil/x86/autorename_libavutil_x86_float_dsp_init.c",
     "libavutil/x86/lls_init.c",
@@ -287,6 +294,10 @@ if ((is_linux && current_cpu == "x64") || (is_linux && current_cpu == "x86") || 
     "libavcodec/x86/vp3dsp.asm",
     "libavcodec/x86/vp8dsp.asm",
     "libavcodec/x86/vp8dsp_loopfilter.asm",
+    "libavcodec/x86/vp9intrapred.asm",
+    "libavcodec/x86/vp9itxfm.asm",
+    "libavcodec/x86/vp9lpf.asm",
+    "libavcodec/x86/vp9mc.asm",
     "libavutil/x86/cpuid.asm",
     "libavutil/x86/float_dsp.asm",
     "libavutil/x86/lls.asm",
