@@ -73,6 +73,8 @@
 #   define STRIDE_ALIGN 8
 #endif
 
+#define FRAME_PADDING 16 + STRIDE_ALIGN - 1
+
 typedef struct FramePool {
     /**
      * Pools for each data plane. For audio all the planes have the same size,
