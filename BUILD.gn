@@ -296,10 +296,6 @@ source_set("ffmpeg_internal") {
     #                'libraries': [
     #                  '$(SDKROOT)/usr/lib/libz.dylib',
     #                ],
-    # TODO(ajwong): How to handle @loader_path?
-    #              'xcode_settings': {
-    #                'DYLIB_INSTALL_NAME_BASE': '@loader_path',
-    #              }
   } else if (is_win) {
     defines += [
       "inline=__inline",

@@ -389,12 +389,6 @@
                   '$(SDKROOT)/usr/lib/libz.dylib',
                 ],
               },
-              'xcode_settings': {
-                'DYLIB_INSTALL_NAME_BASE': '@loader_path',
-                'LIBRARY_SEARCH_PATHS': [
-                  '<(shared_generated_dir)'
-                ],
-              },
             }],  # OS == "mac"
             ['OS == "win"', {
               # TODO(dalecurtis): We should fix these.  http://crbug.com/154421
