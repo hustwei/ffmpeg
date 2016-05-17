@@ -19,7 +19,6 @@
 *.so.*
 *.swp
 *.ver
-*-example
 *-test
 *_g
 \#*
@@ -60,13 +59,16 @@
 /doc/fate.txt
 /doc/print_options
 /lcov/
+/libavformat/protocol_list.c
 /libavcodec/*_tablegen
 /libavcodec/*_tables.c
 /libavcodec/*_tables.h
+/libavcodec/bsf_list.c
 /libavutil/avconfig.h
 /libavutil/ffversion.h
 /src
 /tests/audiogen
+/tests/audiomatch
 /tests/base64
 /tests/checkasm/checkasm
 /tests/data/

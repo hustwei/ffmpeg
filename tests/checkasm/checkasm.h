@@ -31,7 +31,9 @@
 #include "libavutil/timer.h"
 
 void checkasm_check_alacdsp(void);
+void checkasm_check_blend(void);
 void checkasm_check_bswapdsp(void);
+void checkasm_check_colorspace(void);
 void checkasm_check_flacdsp(void);
 void checkasm_check_fmtconvert(void);
 void checkasm_check_h264pred(void);
@@ -171,4 +173,4 @@ void checkasm_checked_call(void *func, ...);
 #define bench_new(...) while(0)
 #endif
 
-#endif
+#endif /* TESTS_CHECKASM_CHECKASM_H */

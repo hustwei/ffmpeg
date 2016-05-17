@@ -113,6 +113,7 @@ const AVCodecTag ff_codec_bmp_tags[] = {
     { AV_CODEC_ID_MPEG4,        MKTAG('G', 'L', 'V', '4') },
     { AV_CODEC_ID_MPEG4,        MKTAG('G', 'M', 'P', '4') }, /* GeoVision camera */
     { AV_CODEC_ID_MPEG4,        MKTAG('M', 'N', 'M', '4') }, /* March Networks DVR */
+    { AV_CODEC_ID_MPEG4,        MKTAG('G', 'T', 'M', '4') }, /* Telefactor */
     { AV_CODEC_ID_MSMPEG4V3,    MKTAG('M', 'P', '4', '3') },
     { AV_CODEC_ID_MSMPEG4V3,    MKTAG('D', 'I', 'V', '3') },
     { AV_CODEC_ID_MSMPEG4V3,    MKTAG('M', 'P', 'G', '3') },
@@ -168,6 +169,9 @@ const AVCodecTag ff_codec_bmp_tags[] = {
     { AV_CODEC_ID_MPEG2VIDEO,   MKTAG('E', 'M', '2', 'V') },
     /* Matrox MPEG-2 intra-only */
     { AV_CODEC_ID_MPEG2VIDEO,   MKTAG('M', '7', '0', '1') },
+    { AV_CODEC_ID_MPEG2VIDEO,   MKTAG('M', '7', '0', '2') },
+    { AV_CODEC_ID_MPEG2VIDEO,   MKTAG('M', '7', '0', '3') },
+    { AV_CODEC_ID_MPEG2VIDEO,   MKTAG('M', '7', '0', '4') },
     { AV_CODEC_ID_MPEG2VIDEO,   MKTAG('M', '7', '0', '5') },
     { AV_CODEC_ID_MPEG2VIDEO,   MKTAG('m', 'p', 'g', 'v') },
     { AV_CODEC_ID_MPEG1VIDEO,   MKTAG('B', 'W', '1', '0') },
@@ -351,6 +355,7 @@ const AVCodecTag ff_codec_bmp_tags[] = {
     { AV_CODEC_ID_FRAPS,        MKTAG('F', 'P', 'S', '1') },
     { AV_CODEC_ID_THEORA,       MKTAG('t', 'h', 'e', 'o') },
     { AV_CODEC_ID_TRUEMOTION2,  MKTAG('T', 'M', '2', '0') },
+    { AV_CODEC_ID_TRUEMOTION2RT,MKTAG('T', 'R', '2', '0') },
     { AV_CODEC_ID_CSCD,         MKTAG('C', 'S', 'C', 'D') },
     { AV_CODEC_ID_ZMBV,         MKTAG('Z', 'M', 'B', 'V') },
     { AV_CODEC_ID_KMVC,         MKTAG('K', 'M', 'V', 'C') },
@@ -414,6 +419,9 @@ const AVCodecTag ff_codec_bmp_tags[] = {
     { AV_CODEC_ID_RSCC,         MKTAG('R', 'S', 'C', 'C') },
     { AV_CODEC_ID_RSCC,         MKTAG('I', 'S', 'C', 'C') },
     { AV_CODEC_ID_CFHD,         MKTAG('C', 'F', 'H', 'D') },
+    { AV_CODEC_ID_M101,         MKTAG('M', '1', '0', '1') },
+    { AV_CODEC_ID_M101,         MKTAG('M', '1', '0', '2') },
+
     { AV_CODEC_ID_NONE,         0 }
 };
 
@@ -442,6 +450,8 @@ const AVCodecTag ff_codec_wav_tags[] = {
     { AV_CODEC_ID_AMR_NB,          0x0038 },  /* rogue format number */
     { AV_CODEC_ID_G723_1,          0x0042 },
     { AV_CODEC_ID_ADPCM_G726,      0x0045 },
+    { AV_CODEC_ID_ADPCM_G726,      0x0014 },  /* g723 Antex */
+    { AV_CODEC_ID_ADPCM_G726,      0x0040 },  /* g721 Antex */
     { AV_CODEC_ID_MP2,             0x0050 },
     { AV_CODEC_ID_MP3,             0x0055 },
     { AV_CODEC_ID_AMR_NB,          0x0057 },
